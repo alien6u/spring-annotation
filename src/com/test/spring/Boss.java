@@ -8,9 +8,9 @@ public class Boss {
 	
 	private Car car;
 	
+	@Autowired
 	private Office office;
 	
-	@Autowired
 	public Boss(Car car, Office office) {
 		super();
 		this.car = car;

@@ -8,9 +8,9 @@
     <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
     <bean id="boss" class="com.test.spring.Boss">
     </bean>
-    <bean id="office" class="com.test.spring.Office">
+   <!--  <bean id="office" class="com.test.spring.Office">
         <property name="officeNo" value="002"/>
-    </bean>
+    </bean> -->
     <bean id="car" class="com.test.spring.Car" scope="singleton">
         <property name="brand" value=" 红旗 CA72"/>
         <property name="price" value="2000"/>
