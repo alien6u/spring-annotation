@@ -3,9 +3,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
  http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+    <!-- 该 BeanPostProcessor 将自动起作用，对标注 @Autowired 的 Bean 进行自动注入 -->
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
     <bean id="boss" class="com.test.spring.Boss">
-        <property name="car" ref="car"/>
-        <property name="office" ref="office" />
     </bean>
     <bean id="office" class="com.test.spring.Office">
         <property name="officeNo" value="002"/>

@@ -1,10 +1,14 @@
 
 package com.test.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 
 public class Boss {
 	
+	@Autowired
 	private Car car;
+	@Autowired
 	private Office office;
 	@Override
 	public String toString() {
