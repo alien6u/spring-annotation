@@ -6,10 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Boss {
 	
-	@Autowired
 	private Car car;
-	@Autowired
+	
 	private Office office;
+	
+	@Autowired
+	public Boss(Car car, Office office) {
+		super();
+		this.car = car;
+		this.office = office;
+	}
 	@Override
 	public String toString() {
 		 return "car:" + car + "\n" + "office:" + office;
