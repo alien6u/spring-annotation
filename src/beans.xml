@@ -7,6 +7,8 @@
 	<!-- 该 BeanPostProcessor 将自动起作用，对标注 @Autowired 的 Bean 进行自动注入 -->
 	<bean
 		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+	<bean
+		class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
 	<bean id="boss" class="com.test.spring.Boss">
 	</bean>
 	<bean id="office" class="com.test.spring.Office">
